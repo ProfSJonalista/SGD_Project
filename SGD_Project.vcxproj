@@ -79,11 +79,11 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Johnny\source\repos\SGD_Project\SDL2_image-2.0.1\include;C:\Users\Johnny\source\repos\SGD_Project\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Johnny\source\repos\SGD_Project\SDL2_ttf-2.0.14\include;C:\Users\Johnny\source\repos\SGD_Project\SDL2_image-2.0.1\include;C:\Users\Johnny\source\repos\SGD_Project\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>C:\Users\Johnny\source\repos\SGD_Project\SDL2_image-2.0.1\lib\x86;C:\Users\Johnny\source\repos\SGD_Project\SDL2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\Johnny\source\repos\SGD_Project\SDL2_ttf-2.0.14\lib\x86;C:\Users\Johnny\source\repos\SGD_Project\SDL2_image-2.0.1\lib\x86;C:\Users\Johnny\source\repos\SGD_Project\SDL2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
