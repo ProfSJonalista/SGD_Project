@@ -151,9 +151,6 @@ int main(int argc, char **argv) {
 	auto BirdyTex = LoadTexture(Renderer, "ptok.png");
 	auto PipeTex = LoadTexture(Renderer, "pipe.png");
 
-	SDL_Color LoseTextColor = { 255, 0, 0 };
-	auto LoseText = ShowText(Renderer, "You lose!", 50, LoseTextColor);
-
 	GameObject Player;
 	Player.Size = { 32,32 };
 	Player.Position[0] = SCREEN_WIDTH / 4;
@@ -242,6 +239,9 @@ int main(int argc, char **argv) {
 		if (GameLost) {
 			int texW = 0;
 			int texH = 0;
+			SDL_Color LoseTextColor = { 255, 0, 0 };
+			auto LoseText = ShowText(Renderer, "You lose!", 50, LoseTextColor);
+
 			SDL_QueryTexture(LoseText.get(), NULL, NULL, &texW, &texH);
 			SDL_Rect Message_rect = { 400 - texW / 2, 300 - texH / 2, texW, texH };
 			SDL_RenderCopy(Renderer.get(), LoseText.get(), NULL, &Message_rect);
